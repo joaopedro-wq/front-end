@@ -1,0 +1,80 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    
+    transition: background-color 0.3s ease;
+}
+
+.dark-mode {
+    background-color: #121212;
+   
+}
+
+mat-card {
+    width: 400px;
+    
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.card-title {
+    font-size: 24px;
+    /* Aumenta o tamanho da fonte */
+    font-weight: bold;
+    /* Deixa a fonte em negrito */
+    text-align: center;
+    /* Centraliza o título */
+    margin-bottom: 20px;
+    /* Adiciona espaço abaixo do título */
+    color: inherit;
+    /* Mantém a cor do texto, que se adapta ao modo claro ou escuro */
+}
+
+.dark-mode mat-card {
+    background-color: #1e1e1e;
+   
+    color: #ffffff;
+  
+}
+
+mat-form-field {
+    width: 100%;
+    margin-bottom: 20px;
+   
+}
+
+.dark-mode mat-form-field input {
+    color: #ffffff;
+ 
+}
+
+.dark-mode mat-label {
+    color: #ffffff;
+    
+}
+
+button {
+    margin-top: 10px;
+}
+
+.dark-mode mat-error {
+    color: #ff4081;
+   
+}
+
+.theme-toggle {
+    margin-top: 15px;
+    
+    text-align: center;
+   
+}
+.register-link {
+    margin-top: 15px;
+   
+    text-align: center;
+   
+}

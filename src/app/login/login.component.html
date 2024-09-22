@@ -1,0 +1,27 @@
+<div class="login-container" [ngClass]="{'dark-mode': isDarkMode}">
+    <mat-card>
+        <mat-card-title class="card-title">Login</mat-card-title>
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+            <mat-form-field appearance="outline">
+                <mat-label>Email</mat-label>
+                <input matInput formControlName="email" type="email" placeholder="Digite seu email">
+                <mat-error *ngIf="loginForm.controls['email'].invalid">Por favor, insira um email válido</mat-error>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Senha</mat-label>
+                <input matInput formControlName="password" type="password" placeholder="Digite sua senha">
+                <mat-error *ngIf="loginForm.controls['password'].invalid">Senha é obrigatória</mat-error>
+            </mat-form-field>
+
+            <button mat-raised-button color="primary" type="submit" [disabled]="loginForm.invalid">Entrar</button>
+        </form>
+        <div class="theme-toggle">
+            <button mat-button (click)="toggleTheme()">Alternar Tema</button>
+        </div>
+        <div class="register-link">
+        <button mat-button color="accent" (click)="navigateToCadastro()">Cadastro</button>
+
+        </div>
+    </mat-card>
+</div>
