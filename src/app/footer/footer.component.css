@@ -1,0 +1,20 @@
+.footer {
+    background-color: #1e1e1e !important;
+    /* Cor de fundo escura */
+    color: #ffffff !important;
+    /* Cor do texto clara */
+    text-align: center;
+    /* Centraliza o texto */
+    padding: 1rem;
+    /* Espaçamento interno */
+}
+
+.footer a {
+    color: #ffffff !important;
+    /* Cor dos links */
+}
+
+.footer a:hover {
+    color: rgba(255, 255, 255, 0.7);
+    /* Efeito de hover nos links */
+}

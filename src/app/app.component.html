@@ -1,7 +1,5 @@
 <main class="main">
+  <app-header></app-header>
   <router-outlet></router-outlet>
-  <button class="theme-toggle-button" (click)="toggleTheme()">
-    <span *ngIf="isDarkMode" class="material-icons">light_mode</span>
-    <span *ngIf="!isDarkMode" class="material-icons">dark_mode</span>
-  </button>
+  <app-footer></app-footer>
 </main>

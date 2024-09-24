@@ -1,0 +1,109 @@
+.header {
+    background-color: #1e1e1e !important;
+    /* Cor de fundo escura */
+    color: #ffffff !important;
+    /* Cor do texto clara */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    /* Sombra mais suave */
+    transition: background-color 0.3s ease;
+    /* Transição suave para o fundo */
+}
+
+.mat-toolbar {
+    display: flex;
+    /* Garante que o conteúdo do toolbar esteja em linha */
+    align-items: center;
+    /* Alinha os itens verticalmente */
+    justify-content: space-between;
+    /* Espaça os itens */
+    padding: 0 16px;
+    /* Espaçamento lateral */
+}
+
+.title-icon {
+    font-size: 22px;
+    /* Tamanho do ícone reduzido */
+    margin-right: 10px;
+    /* Espaço entre o ícone e o título */
+    color: #ff4081;
+    /* Cor do ícone */
+}
+
+.title {
+    font-size: 18px;
+    /* Tamanho do título reduzido */
+    font-weight: bold;
+    /* Título em negrito */
+    color: #ff4081;
+    /* Cor do título */
+}
+
+.spacer {
+    flex: 1;
+    /* O spacer ocupa o espaço restante */
+}
+
+/* Estilizando os links para o tema dark */
+.desktop-menu {
+    display: flex;
+    /* Alinha os itens do menu em linha */
+}
+
+.menu-button {
+    color: #ffffff !important;
+    /* Cor dos botões */
+    position: relative;
+    /* Para animações */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    /* Animações de transição */
+    display: flex;
+    /* Para alinhar ícone e texto */
+    align-items: center;
+    /* Centraliza verticalmente */
+    font-size: 13px;
+    /* Tamanho do texto do botão reduzido */
+    margin-right: 16px;
+    /* Espaço entre os itens do menu */
+}
+
+.menu-button mat-icon {
+    margin-right: 8px;
+    /* Espaçamento entre o ícone e o texto */
+    font-size: 15px;
+    /* Tamanho do ícone reduzido */
+}
+
+.menu-button:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    /* Cor ao passar o mouse */
+    transform: scale(1.05);
+    /* Efeito de leve aumento ao passar o mouse */
+}
+
+.mobile-menu-button {
+    display: none;
+    /* Oculta o botão do menu em telas grandes */
+}
+
+/* Estilos para telas pequenas */
+@media (max-width: 600px) {
+    .desktop-menu {
+        display: none;
+        /* Oculta o menu desktop em telas pequenas */
+    }
+
+    .mobile-menu-button {
+        display: block;
+        /* Mostra o botão do menu em telas pequenas */
+    }
+
+    .title {
+        font-size: 1.2em;
+        /* Tamanho do título para telas pequenas */
+    }
+
+    .title-icon {
+        font-size: 10px;
+        /* Tamanho do ícone para telas pequenas */
+    }
+}

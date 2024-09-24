@@ -1,0 +1,84 @@
+.feed-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease;
+}
+
+.dark-mode {
+    background-color: #121212;
+}
+
+mat-card {
+    width: 100%;
+    max-width: 600px;
+    height: 200px;
+    margin: 20px 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.dark-mode mat-card {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+mat-card-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+mat-card-subtitle {
+    font-size: 0.9em;
+    color: #888888;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+mat-card-content p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #333;
+    text-align: center;
+}
+
+.dark-mode mat-card-content p {
+    color: #ddd;
+}
+
+.post {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 15px;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    
+}
+
+
+.post.animate {
+    transform: scale(1.05);
+    /* Aumenta um pouco o tamanho do cartão */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    /* Sombra mais intensa */
+}
+
+
+
+.dark-mode .post {
+    background-color: #1e1e1e;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}

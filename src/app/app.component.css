@@ -1,0 +1,32 @@
+.dark-mode {
+    background-color: #121212;
+
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Faz o main ocupar a altura total da tela */
+}
+
+.theme-toggle-button {
+    position: fixed;
+    /* Fixa o botão na tela */
+    top: 20px;
+    /* Distância do topo */
+    right: 20px;
+    /* Distância da direita */
+    background-color: transparent;
+    /* Fundo transparente */
+    border: none;
+    /* Sem borda */
+    cursor: pointer;
+    /* Muda o cursor para indicar clicável */
+    z-index: 1000;
+    /* Garante que o botão fique acima dos outros elementos */
+}
+
+footer {
+    margin-top: auto;
+    /* Faz o footer se posicionar no final */
+}

@@ -1,0 +1,12 @@
+<div class="feed-container" [ngClass]="{ 'dark-mode': isDarkMode }">
+    <div *ngFor="let post of posts" [@listAnimation] class="post" (mouseenter)="onMouseEnter($event)"
+        (mouseleave)="onMouseLeave($event)">
+        <mat-card>
+            <mat-card-title>{{ post.username }}</mat-card-title>
+            <mat-card-subtitle>{{ post.timestamp | date:'short' }}</mat-card-subtitle>
+            <mat-card-content>
+                <p>{{ post.content }}</p>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>

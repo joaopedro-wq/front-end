@@ -1,19 +1,24 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  template: `
-    <button class="theme-toggle-button" (click)="toggleTheme()">
-      <span *ngIf="isDarkMode" class="material-icons">light_mode</span>
-      <span *ngIf="!isDarkMode" class="material-icons">dark_mode</span>
-    </button>
-    <router-outlet></router-outlet>
-  `,
-
-  imports: [RouterModule, CommonModule],
+  imports: [
+    RouterModule,
+    CommonModule,
+    HeaderComponent,
+    FooterComponent,
+   /*  MatToolbarModule,
+    MatButtonModule, */
+  ],
+  templateUrl: '././app.component.html',
+  styleUrls: ['./app.component.css'], // Inclua um arquivo CSS para estilos adicionais
 })
 export class AppComponent {
   isDarkMode = false;
